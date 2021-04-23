@@ -1,8 +1,17 @@
 const express = require('express');
+const connectDB = require('./config/db');
 
 const app = express();
 
-app.get('/', (req, res) => res.json({ msg: 'Welcome to the Manage Invest...' }));
+// Connect Database
+connectDB();
+
+// Init Middleware
+app.use(express.json({ exrended: false }));
+
+app.get('/', (req, res) => 
+    res.json({ msg: 'Welcome to the Manage Invest...' })
+);
 
 
 // Define Routes

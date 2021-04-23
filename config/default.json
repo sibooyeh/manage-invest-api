@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://manage-invest-db:GmmMLq6PZo6A3u4J@cluster0.khkwm.mongodb.net/investManagment?retryWrites=true&w=majority",
+    "jwtSecret": "secret"
+}
